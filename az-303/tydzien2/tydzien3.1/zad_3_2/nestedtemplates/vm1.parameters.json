@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "vmName": {
-      "value": "vm-crm-dev-ub-001"
+      "value": "trr-hr-prod-vmub-001"
     },
     "subnetName": {
       "value": "Subnet-1"

@@ -1,0 +1,118 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "subscription": {
+      "type": "string",
+      "defaultValue": "[subscription().subscriptionId]"
+    },
+    "kvResourceGroupName": {
+      "type": "string",
+      "defaultValue": "trr-kv-rg"
+    },
+    "keyVaultName": {
+      "type": "string",
+      "defaultValue": "trr-hr-prod-vmub-kv"
+    },
+    "vmAdminUser": {
+      "type": "string",
+      "defaultValue": "adminos"
+    },
+    "vmSecretAdminPassword": {
+      "type": "string",
+      "defaultValue": "vmSecretAdminPassword"
+    },
+    "vmName": {
+      "type": "string",
+      "defaultValue": "trr-hr-prod-vmub"
+    }
+  },
+  "variables": {
+    "vmName1": "[concat(parameters('vmName'), '-001')]",
+    "vmName2": "[concat(parameters('vmName'), '-002')]"
+  },
+  "resources": [
+    {
+      "name": "vnet",
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2019-05-01",
+      "dependsOn": [],
+      "properties": {
+        "mode": "Incremental",
+        "templateLink": {
+          "uri": "https://raw.githubusercontent.com/mzdzioch/szkolachmury/az-303/tydzien2/tydzien3.1/zad_3_4/nestedtemplates/vnet.json",
+      "contentVersion": "1.0.0.0"
+    },
+        "parametersLink": {
+          "uri": "https://raw.githubusercontent.com/mzdzioch/szkolachmury/az-303/tydzien2/tydzien3.1/zad_3_4/vnet.parameters.json",
+          "contentVersion": "1.0.0.0"
+        }
+      }
+    },
+    {
+      "name": "vm1",
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2019-05-01",
+      "dependsOn": [ "vnet" ],
+      "properties": {
+        "mode": "Incremental",
+        "templateLink": {
+          "uri": "https://raw.githubusercontent.com/mzdzioch/szkolachmury/az-303/tydzien2/tydzien3.1/zad_3_4/nestedtemplates/vm.json",
+          "contentVersion": "1.0.0.0"
+        },
+        "parameters": {
+          "vmName": {
+            "value": "[variables('vmName1')]"
+          },
+          "subnetName": {
+            "value": "Subnet-1"
+          },
+          "vmAdminUserName": {
+            "value": "[parameters('vmAdminUser')]"
+          },
+          "vmAdminPassword": {
+            "reference": {
+              "keyVault": {
+                "id": "[resourceId(parameters('subscription'), parameters('kvResourceGroupName'), 'Microsoft.KeyVault/vaults', parameters('keyVaultName'))]"
+              },
+              "secretName": "[parameters('vmSecretAdminPassword')]"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "vm2",
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2019-05-01",
+      "dependsOn": [ "vnet" ],
+      "properties": {
+        "mode": "Incremental",
+        "templateLink": {
+          "uri": "https://raw.githubusercontent.com/mzdzioch/szkolachmury/az-303/tydzien2/tydzien3.1/zad_3_4/nestedtemplates/vm.json",
+          "contentVersion": "1.0.0.0"
+        },
+        "parameters": {
+          "vmName": {
+            "value": "[variables('vmName2')]"
+          },
+          "subnetName": {
+            "value": "Subnet-2"
+          },
+          "vmAdminUserName": {
+            "value": "[parameters('vmAdminUser')]"
+          },
+          "vmAdminPassword": {
+            "reference": {
+              "keyVault": {
+                "id": "[resourceId(parameters('subscription'), parameters('kvResourceGroupName'), 'Microsoft.KeyVault/vaults', parameters('keyVaultName'))]"
+              },
+              "secretName": "[parameters('vmSecretAdminPassword')]"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "outputs": {}
+}

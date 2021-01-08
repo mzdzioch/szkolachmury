@@ -44,7 +44,7 @@
     }
   },
   "variables": {
-    "storagevmName": "[concat('trrhrprod', uniqueString(resourceGroup().id))]",
+    "storagevmName": "[concat('vm', uniqueString(resourceGroup().id), 'disk')]",
     "vmImagePublisher": "Canonical",
     "vmImageOffer": "UbuntuServer",
     "vmOSDiskName": "[concat(parameters('vmName'), '_OS-Disk')]",
