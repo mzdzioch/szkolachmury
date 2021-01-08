@@ -1,0 +1,62 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+
+  },
+  "variables": {
+   },
+  "resources": [
+    {
+      "name": "vnet",
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2019-05-01",
+      "dependsOn": [],
+      "properties": {
+        "mode": "Incremental",
+        "templateLink": {
+          "uri": "https://raw.githubusercontent.com/mzdzioch/armtest/main/AzureResourceGroup5/AzureResourceGroup5/nestedtemplates/vnet.json",
+          "contentVersion": "1.0.0.0"
+        },
+        "parametersLink": {
+          "uri": "https://raw.githubusercontent.com/mzdzioch/armtest/main/AzureResourceGroup5/AzureResourceGroup5/nestedtemplates/vnet.parameters.json",
+          "contentVersion": "1.0.0.0"
+        }
+      }
+    },
+    {
+      "name": "vm1",
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2019-05-01",
+      "dependsOn": [ "vnet" ],
+      "properties": {
+        "mode": "Incremental",
+        "templateLink": {
+          "uri": "https://raw.githubusercontent.com/mzdzioch/armtest/main/AzureResourceGroup5/AzureResourceGroup5/nestedtemplates/vm.json",
+          "contentVersion": "1.0.0.0"
+        },
+        "parametersLink": {
+          "uri": "https://raw.githubusercontent.com/mzdzioch/armtest/main/AzureResourceGroup5/AzureResourceGroup5/nestedtemplates/vm1.parameters.json",
+          "contentVersion": "1.0.0.0"
+        }
+      }
+    },
+    {
+      "name": "vm2",
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2019-05-01",
+      "dependsOn": [ "vnet" ],
+      "properties": {
+        "mode": "Incremental",
+        "templateLink": {
+          "uri": "https://raw.githubusercontent.com/mzdzioch/armtest/main/AzureResourceGroup5/AzureResourceGroup5/nestedtemplates/vm.json",
+          "contentVersion": "1.0.0.0"
+        },
+        "parametersLink": {
+          "uri": "https://raw.githubusercontent.com/mzdzioch/armtest/main/AzureResourceGroup5/AzureResourceGroup5/nestedtemplates/vm2.parameters.json",
+          "contentVersion": "1.0.0.0"
+        }
+      }
+    }],
+  "outputs": {}
+}
