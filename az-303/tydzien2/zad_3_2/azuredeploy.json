@@ -15,11 +15,11 @@
       "properties": {
         "mode": "Incremental",
         "templateLink": {
-          "uri": "https://raw.githubusercontent.com/mzdzioch/szkolachmury/az-303/tydzien2/tydzien3.1/zad_3_2/nestedtemplates/vnet.json",
+          "uri": "https://raw.githubusercontent.com/mzdzioch/szkolachmury/az-303/tydzien2/zad_3_2/nestedtemplates/vnet.json",
           "contentVersion": "1.0.0.0"
         },
         "parametersLink": {
-          "uri": "https://raw.githubusercontent.com/mzdzioch/szkolachmury/az-303/tydzien2/tydzien3.1/zad_3_2/nestedtemplates/vnet.parameters.json",
+          "uri": "https://raw.githubusercontent.com/mzdzioch/szkolachmury/az-303/tydzien2/zad_3_2/nestedtemplates/vnet.parameters.json",
           "contentVersion": "1.0.0.0"
         }
       }
@@ -32,11 +32,11 @@
       "properties": {
         "mode": "Incremental",
         "templateLink": {
-          "uri": "https://raw.githubusercontent.com/mzdzioch/szkolachmury/az-303/tydzien2/tydzien3.1/zad_3_2/nestedtemplates/vm.json",
+          "uri": "https://raw.githubusercontent.com/mzdzioch/szkolachmury/az-303/tydzien2/zad_3_2/nestedtemplates/vm.json",
           "contentVersion": "1.0.0.0"
         },
         "parametersLink": {
-          "uri": "https://raw.githubusercontent.com/mzdzioch/szkolachmury/az-303/tydzien2/tydzien3.1/zad_3_2/nestedtemplates/vm1.parameters.json",
+          "uri": "https://raw.githubusercontent.com/mzdzioch/szkolachmury/az-303/tydzien2/zad_3_2/nestedtemplates/vm1.parameters.json",
           "contentVersion": "1.0.0.0"
         }
       }
@@ -49,11 +49,11 @@
       "properties": {
         "mode": "Incremental",
         "templateLink": {
-          "uri": "https://raw.githubusercontent.com/mzdzioch/szkolachmury/az-303/tydzien2/tydzien3.1/zad_3_2/nestedtemplates/vm.json",
+          "uri": "https://raw.githubusercontent.com/mzdzioch/szkolachmury/az-303/tydzien2/zad_3_2/nestedtemplates/vm.json",
           "contentVersion": "1.0.0.0"
         },
         "parametersLink": {
-          "uri": "https://raw.githubusercontent.com/mzdzioch/szkolachmury/az-303/tydzien2/tydzien3.1/zad_3_2/nestedtemplates/vm2.parameters.json",
+          "uri": "https://raw.githubusercontent.com/mzdzioch/szkolachmury/az-303/tydzien2/zad_3_2/nestedtemplates/vm2.parameters.json",
           "contentVersion": "1.0.0.0"
         }
       }
