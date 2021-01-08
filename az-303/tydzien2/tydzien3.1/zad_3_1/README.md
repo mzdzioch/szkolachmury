@@ -1,18 +1,28 @@
-#TYDZIEN3.1 „Zbuduj prost¹ konwencjê nazewnicz¹ dla min. takich zasobów jak Grupa Zasobów, VNET, Maszyn Wirtualna, Dysk, Konta sk³adowania danych. Pamiêtaj o ograniczeniach w nazywaniu zasobów, które wystêpuj¹ w Azure”
+#TYDZIEN3.1 â€Zbuduj prostÄ… konwencjÄ™ nazewniczÄ… dla min. takich zasobÃ³w jak Grupa ZasobÃ³w, VNET, Maszyn Wirtualna, Dysk, Konta skÅ‚adowania danych. PamiÄ™taj o ograniczeniach w nazywaniu zasobÃ³w, ktÃ³re wystÄ™pujÄ… w Azureâ€
 
-Trey Research Inc. (TRRInc.)
+Company: Trey Research Inc. (TRRInc.)
 
 Resource Group
+```
 trr-hr-prod-rg
+```
 
 VNET
+```
 trr-hr-prod-vnet
+```
 
 Virtual Machine
+```
 trr-hr-prod-vmwin2k16-001
+```
 
 Disk
+```
 trr-hr-prod-vmwin2k16-001_OS-Disk
+```
 
 Storage Account
+```
 trrhr<uniqueString>
+```
