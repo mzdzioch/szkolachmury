@@ -1,1 +1,14 @@
-#TYDZIEN3.4 „Spróbuj na koniec zmodyfikowaæ template tak, by nazwa u¿ytkownika i has³o do ka¿dej maszyny z pkt. 2 by³o pobierane z KeyVault.„
+#TYDZIEN3.4 â€žSprÃ³buj na koniec zmodyfikowaÄ‡ template tak, by nazwa uÅ¼ytkownika i hasÅ‚o do kaÅ¼dej maszyny z pkt. 2 byÅ‚o pobierane z KeyVault.â€ž
+
+```
+$rg = "trr-kv-rg"
+$location = "westeurope"
+$keyvaultName = "trr-hr-prod-vmub-kv"
+$secretName = "vmSecretAdminPassword"
+$value = "passwordP@SSWORD"
+
+az group create --name $rg -l $location
+az keyvault create --name $keyvaultName" -g $rg
+az keyvault secret set --vault-name $keyvaultName --name $secretName --value $value
+
+```
