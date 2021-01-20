@@ -1,7 +1,15 @@
-#TYDZIEN3.1 „Zbuduj prost¹ konwencjê nazewnicz¹ dla min. takich zasobów jak Grupa Zasobów, VNET, Maszyn Wirtualna, Dysk, Konta sk³adowania danych. Pamiêtaj o ograniczeniach w nazywaniu zasobów, które wystêpuj¹ w Azure”
+#TYDZIEN3.1 â€Zbuduj prostÄ… konwencjÄ™ nazewniczÄ… dla min. takich zasobÃ³w jak Grupa ZasobÃ³w, VNET, Maszyn Wirtualna, Dysk, Konta skÅ‚adowania danych. PamiÄ™taj o ograniczeniach w nazywaniu zasobÃ³w, ktÃ³re wystÄ™pujÄ… w Azureâ€
 
-#TYDZIEN3.2 „ Zbuduj prosty ARM Template (mo¿esz wykorzystaæ ju¿ gotowe wzorce z GitHub), który wykorzystuje koncepcjê Linked Templates. Template powinien zbudowaæ œrodowisko z³o¿one z jednej sieci VNET, podzielonej na dwa subnety. W ka¿dy subnecie powinna powstaæ najprostsza maszyna wirtualna z systemem Ubuntu 18.04 a na ka¿dym subnecie powinny zostaæ skonfigurowane NSG.”
+https://github.com/mzdzioch/szkolachmury/tree/main/az-303/tydzien2/zad_3_1
 
-#TYDZIEN3.3 „Zbuduj najprostrz¹ w³aœn¹ rolê RBAC, która pozwala u¿ytkownikowi uruchomiæ maszynê, zatrzymaæ j¹ i zg³osiæ zg³oszenie do supportu przez Portal Azure”
+#TYDZIEN3.2 â€ Zbuduj prosty ARM Template (moÅ¼esz wykorzystaÄ‡ juÅ¼ gotowe wzorce z GitHub), ktÃ³ry wykorzystuje koncepcjÄ™ Linked Templates. Template powinien zbudowaÄ‡ Å›rodowisko zÅ‚oÅ¼one z jednej sieci VNET, podzielonej na dwa subnety. W kaÅ¼dy subnecie powinna powstaÄ‡ najprostsza maszyna wirtualna z systemem Ubuntu 18.04 a na kaÅ¼dym subnecie powinny zostaÄ‡ skonfigurowane NSG.â€
 
-#TYDZIEN3.4 „Spróbuj na koniec zmodyfikowaæ template tak, by nazwa u¿ytkownika i has³o do ka¿dej maszyny z pkt. 2 by³o pobierane z KeyVault.„
+https://github.com/mzdzioch/szkolachmury/tree/main/az-303/tydzien2/zad_3_2
+
+#TYDZIEN3.3 â€Zbuduj najprostrzÄ… wÅ‚aÅ›nÄ… rolÄ™ RBAC, ktÃ³ra pozwala uÅ¼ytkownikowi uruchomiÄ‡ maszynÄ™, zatrzymaÄ‡ jÄ… i zgÅ‚osiÄ‡ zgÅ‚oszenie do supportu przez Portal Azureâ€
+
+https://github.com/mzdzioch/szkolachmury/tree/main/az-303/tydzien2/zad_3_3
+
+#TYDZIEN3.4 â€SprÃ³buj na koniec zmodyfikowaÄ‡ template tak, by nazwa uÅ¼ytkownika i hasÅ‚o do kaÅ¼dej maszyny z pkt. 2 byÅ‚o pobierane z KeyVault.â€
+
+https://github.com/mzdzioch/szkolachmury/tree/main/az-303/tydzien2/zad_3_4
