@@ -1,0 +1,2 @@
+Sama koncepcja posiadania usługi skoncentrowanej i ujednoliconej na bezpieczeństwie jaką jest Azure Security Center z pewnością jest zaletą Azure. W jednym miejscu mamy pełny wachlarz niezbędnych rzeczy - od podstawowych rekomendacji gwarantujących bezpieczeństwo środowisk, poprzez wdrażanie wszelkiej maści regulacji czy też analizy realnych zagrożeń na które wystawione jest środowisko. 
+Wracając do samego ćwiczenia, wdrażanie regulacji PCI DSS w Azure Security Center jest o tyle prostsza dzięki dokładnym opisom przy każdym punkcie. 
