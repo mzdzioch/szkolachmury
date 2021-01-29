@@ -1,6 +1,6 @@
-zad 2) 
+# zad 2) 
 
-Spróbuj stworzyć 3 nowe role i sprawdź ich działanie tworząc 3 urzytkowników dla potrzeb testów:
+## Spróbuj stworzyć 3 nowe role i sprawdź ich działanie tworząc 3 urzytkowników dla potrzeb testów:
 
 Uwaga: rola domyślnie nie może nic ponad to, co opisano niżej. A więc rola SecurityEng może tylko tworzyć zapytania i nic ponad to.
 
