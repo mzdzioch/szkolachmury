@@ -17,14 +17,14 @@ Dział IT w większych organizacjach podzielony jest kilka- kilkanaście jednost
 przygotujesz krótki podział mgmt group oraz subksrypcji z uzasadnieniem dlaczego tak to chcesz budować
 
 * Grupa zarządzająca główna
-** administracyjne dotyczące platformy (zarządzenie siecią, zarządzanie zasobami, zarządzanie tożsamościami)
-*** osobne subskrypcje dla każdego obszaru zarządzania
-** aplikacje korporacyjne dla poszczególnych działów (HR, etc.) 
-*** osobne management group dla każdego działu
-*** osobne subskrypcje dla każdego systemu
-** sandbox’y 
-*** osobne subskrupcje dla poszczególnych aplikacji 
-** automatyzacja
+  * administracyjne dotyczące platformy (zarządzenie siecią, zarządzanie zasobami, zarządzanie tożsamościami)
+    * osobne subskrypcje dla każdego obszaru zarządzania
+  * aplikacje korporacyjne dla poszczególnych działów (HR, etc.) 
+    * osobne management group dla każdego działu
+    * osobne subskrypcje dla każdego systemu
+  * sandbox’y 
+    * osobne subskrupcje dla poszczególnych aplikacji 
+  * automatyzacja
 
 	
 	
