@@ -1,7 +1,7 @@
 zad 3
 
-**Ponieważ już poznałeś nieco model ról, model polityk, model subskrypcji, napisz krótki dokument, najlepiej w punktach, w którym:
-opiszesz krótko jak działa IT w firmie - najważniejsze rzeczy
+## **Ponieważ już poznałeś nieco model ról, model polityk, model subskrypcji, napisz krótki dokument, najlepiej w punktach, w którym:
+opiszesz krótko jak działa IT w firmie - najważniejsze rzeczy**
 
 Dział IT w większych organizacjach podzielony jest kilka- kilkanaście jednostek zajmujących się konkretnymi tematami takimi jak: 
 * System, IaaS Compute and Storage
@@ -14,7 +14,7 @@ Dział IT w większych organizacjach podzielony jest kilka- kilkanaście jednost
 * Service desk
 
 
-**przygotujesz krótki podział mgmt group oraz subksrypcji z uzasadnieniem dlaczego tak to chcesz budować
+## **przygotujesz krótki podział mgmt group oraz subksrypcji z uzasadnieniem dlaczego tak to chcesz budować**
 
 * Grupa zarządzająca główna
   * grupy zarządzające administracyjne dotyczące platformy (zarządzenie siecią, zarządzanie zasobami, zarządzanie tożsamościami)
@@ -27,7 +27,7 @@ Dział IT w większych organizacjach podzielony jest kilka- kilkanaście jednost
   * grupa zarządzająca automatyzacja
 
 
-**przygotujesz krótki opis ról, które chcesz by występowały w organizajci z krótkim opisem zadań każdej z nich
+## **przygotujesz krótki opis ról, które chcesz by występowały w organizajci z krótkim opisem zadań każdej z nich**
 
 SysOps - role związane z obsługą infrastruktury serwerowo-systemowej, np:
 * Virtual Machines administrator 
@@ -48,7 +48,7 @@ DevOps
 * Logic App Operator/Contributor
 Funkcyjne dla działów które korzystają z konkretnych aplikacji/systemów.
 
-**przygotujesz krótki opis wybranych polityk, które są dla Ciebie najważniejsze. uzasdnij swój wybór
+## **przygotujesz krótki opis wybranych polityk, które są dla Ciebie najważniejsze. uzasdnij swój wybór**
 
 * Organizacyjne, jako zwiększające poziom organizacji i czytelności zasobów w firmie
   * Konwencja nazewnicza – wymuszenie stosowania konwencji nazewniczej dla zasobów w Azure
