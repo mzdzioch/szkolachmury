@@ -1,0 +1,48 @@
+{
+  "properties": {
+    "displayName": "SqlServer_PublicNetworkAccess_Deny",
+    "policyType": "Custom",
+    "mode": "Indexed",
+    "metadata": {
+      "createdBy": "ed740b8e-20f2-4edc-b4fe-2cd0aa2a014d",
+      "createdOn": "2021-01-24T18:48:09.7533478Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "parameters": {
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Enable or disable the execution of the policy"
+        },
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "field": "type",
+            "equals": "Microsoft.Sql/servers"
+          },
+          {
+            "field": "Microsoft.Sql/servers/publicNetworkAccess",
+            "notEquals": "Disabled"
+          }
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]"
+      }
+    }
+  },
+  "id": "/subscriptions/88c6bf36-92e2-4dde-a66c-4b3ecf08c53c/providers/Microsoft.Authorization/policyDefinitions/46f06e19-6cb2-452e-867a-ea7c4bf9e7ba",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "46f06e19-6cb2-452e-867a-ea7c4bf9e7ba"
+}

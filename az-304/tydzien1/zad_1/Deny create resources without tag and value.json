@@ -1,0 +1,43 @@
+{
+  "properties": {
+    "displayName": "tagandvalue",
+    "policyType": "Custom",
+    "mode": "Indexed",
+    "metadata": {
+      "createdBy": "ed740b8e-20f2-4edc-b4fe-2cd0aa2a014d",
+      "createdOn": "2021-01-24T21:47:51.3288452Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "parameters": {
+      "tagName": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Owner",
+          "description": "null"
+        }
+      },
+      "tagValue": {
+        "type": "String",
+        "metadata": {
+          "displayName": "@chmurowisko.pl",
+          "description": "null"
+        }
+      }
+    },
+    "policyRule": {
+      "if": {
+        "not": {
+          "field": "[concat('tags[', parameters('tagName'), ']')]",
+          "like": "[concat('*', parameters('tagValue'))]"
+        }
+      },
+      "then": {
+        "effect": "deny"
+      }
+    }
+  },
+  "id": "/subscriptions/88c6bf36-92e2-4dde-a66c-4b3ecf08c53c/providers/Microsoft.Authorization/policyDefinitions/929795a5-0ccb-4e15-93af-64167713e831",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "929795a5-0ccb-4e15-93af-64167713e831"
+}

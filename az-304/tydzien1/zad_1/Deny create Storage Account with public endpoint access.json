@@ -1,0 +1,55 @@
+{
+  "properties": {
+    "displayName": "VirtualNetworkServiceEndpoint_StorageAccount_Deny_works",
+    "policyType": "Custom",
+    "mode": "Indexed",
+    "metadata": {
+      "createdBy": "ed740b8e-20f2-4edc-b4fe-2cd0aa2a014d",
+      "createdOn": "2021-01-24T12:34:44.7262455Z",
+      "updatedBy": "ed740b8e-20f2-4edc-b4fe-2cd0aa2a014d",
+      "updatedOn": "2021-01-24T17:14:16.0423706Z"
+    },
+    "parameters": {
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Enable or disable the execution of the policy"
+        },
+        "allowedValues": [
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "field": "type",
+            "equals": "Microsoft.Storage/storageAccounts"
+          },
+          {
+            "anyOf": [
+              {
+                "field": "Microsoft.Storage/storageAccounts/networkAcls.defaultAction",
+                "notEquals": "Deny"
+              },
+              {
+                "field": "Microsoft.Storage/storageAccounts/networkAcls.virtualNetworkRules[*].id",
+                "exists": "false"
+              }
+            ]
+          }
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]"
+      }
+    }
+  },
+  "id": "/subscriptions/88c6bf36-92e2-4dde-a66c-4b3ecf08c53c/providers/Microsoft.Authorization/policyDefinitions/2baeb405-6220-4ffa-acde-25f6dd0a7d52",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "2baeb405-6220-4ffa-acde-25f6dd0a7d52"
+}
