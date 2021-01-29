@@ -1,38 +1,44 @@
- Poniewa¿ ju¿ pozna³eœ nieco model ról, model polityk, model subskrypcji, napisz krótki dokument, najlepiej w punktach, w którym:
-opiszesz krótko jak dzia³a IT w firmie - najwa¿niejsze rzeczy
-Dzia³ IT w wiêkszych organizacjach podzielony jest kilka- kilkanaœcie jednostek zajmuj¹cych siê konkretnymi tematami takimi jak: 
-System, IaaS Compute and Storage
-Network and Unified Communication
-Application Development and Integration Platforms
-Data Management and Data Platforms
-Application Security and Data Protection
-Data&Analytics/BI
-Digital Workspace
-Service desk
-przygotujesz krótki podzia³ mgmt group oraz subksrypcji z uzasadnieniem dlaczego tak to chcesz budowaæ
-Grupa zarz¹dzaj¹ca g³ówna
-administracyjne dotycz¹ce platformy (zarz¹dzenie sieci¹, zarz¹dzanie zasobami, zarz¹dzanie to¿samoœciami)
-osobne subskrypcje dla ka¿dego obszaru zarz¹dzania
-aplikacje korporacyjne dla poszczególnych dzia³ów (HR, etc.) 
-osobne management group dla ka¿dego dzia³u
-osobne subskrypcje dla ka¿dego systemu
-sandbox’y 
-osobne subskrupcje dla poszczególnych aplikacji 
-automatyzacja
+zad 3
+
+PoniewaÅ¼ juÅ¼ poznaÅ‚eÅ› nieco model rÃ³l, model polityk, model subskrypcji, napisz krÃ³tki dokument, najlepiej w punktach, w ktÃ³rym:
+opiszesz krÃ³tko jak dziaÅ‚a IT w firmie - najwaÅ¼niejsze rzeczy
+
+DziaÅ‚ IT w wiÄ™kszych organizacjach podzielony jest kilka- kilkanaÅ›cie jednostek zajmujÄ…cych siÄ™ konkretnymi tematami takimi jak: 
+* System, IaaS Compute and Storage
+* Network and Unified Communication
+* Application Development and Integration Platforms
+* Data Management and Data Platforms
+* Application Security and Data Protection
+* Data&Analytics/BI
+* Digital Workspace
+* Service desk
+
+
+przygotujesz krÃ³tki podziaÅ‚ mgmt group oraz subksrypcji z uzasadnieniem dlaczego tak to chcesz budowaÄ‡
+
+* Grupa zarzÄ…dzajÄ…ca gÅ‚Ã³wna
+** administracyjne dotyczÄ…ce platformy (zarzÄ…dzenie sieciÄ…, zarzÄ…dzanie zasobami, zarzÄ…dzanie toÅ¼samoÅ›ciami)
+*** osobne subskrypcje dla kaÅ¼dego obszaru zarzÄ…dzania
+** aplikacje korporacyjne dla poszczegÃ³lnych dziaÅ‚Ã³w (HR, etc.) 
+*** osobne management group dla kaÅ¼dego dziaÅ‚u
+*** osobne subskrypcje dla kaÅ¼dego systemu
+** sandboxâ€™y 
+*** osobne subskrupcje dla poszczegÃ³lnych aplikacji 
+** automatyzacja
 
 	
 	
 
 
-przygotujesz krótki opis ról, które chcesz by wystêpowa³y w organizajci z krótkim opisem zadañ ka¿dej z nich
-SysOps - role zwi¹zane z obs³ug¹ infrastruktury serwerowo-systemowej, np:
+przygotujesz krÃ³tki opis rÃ³l, ktÃ³re chcesz by wystÄ™powaÅ‚y w organizajci z krÃ³tkim opisem zadaÅ„ kaÅ¼dej z nich
+SysOps - role zwiÄ…zane z obsÅ‚ugÄ… infrastruktury serwerowo-systemowej, np:
 Virtual Machines administrator 
 Storage Account Contributor administrator
 Backup Contributor
 CosmosDB  / SQL DB Operator
-NetOps - role zwi¹zane z sieci¹ i obs³uga sieci: 
+NetOps - role zwiÄ…zane z sieciÄ… i obsÅ‚uga sieci: 
 Network Contributor
-SecOps – role zwi¹zane z bezpieczeñstwem np
+SecOps â€“ role zwiÄ…zane z bezpieczeÅ„stwem np
 Key Vault Administrator
 Monitoring Contributor
 Security Admin
@@ -40,17 +46,17 @@ Security Admin
 DevOps
 Azure K8s Admin
 Logic App Operator/Contributor
-Funkcyjne dla dzia³ów które korzystaj¹ z konkretnych aplikacji/systemów. 
-przygotujesz krótki opis wybranych polityk, które s¹ dla Ciebie najwa¿niejsze. uzasdnij swój wybór
-Organizacyjne, jako zwiêkszaj¹ce poziom organizacji i czytelnoœci zasobów w firmie
-Konwencja nazewnicza – wymuszenie stosowania konwencji nazewniczej dla zasobów w Azure
-Ograniczaj¹ce koszty, jako polityki które trzymaj¹ koszty w ryzach, blokuj¹c przypadkowe lub nieœwiadome wybieranie drogich zasobów których organizacja nie potrzebuje
-Ograniczenie u¿ycia okreœlonych zasobów – wykluczenie zasobów lub rozmiarów pewnych zasobów (VM, storage) które organizacja nie bêdzie korzysta³a np. ze wzglêdu na wysokie koszty
-Wykluczenie lokalizacji których organizacja nie b
-Zapewniaj¹ce podstawowe bezpieczeñstwo œrodowiska. Zapewnienie bezpieczeñstwa jest kluczowym kryterium w ka¿dej firmie, 
-Audyt szyfrowanie dysków – bezpieczeñstwo danych musi byæ zapewnione od samego pocz¹tku stworzenia VM
-Wymuszenie instalacja rozszerzenie antymalware – podobnie jak wy¿ej, podstawowe zasady bezpieczeñstwa
-Weryfikacja czy us³ugi które s¹ zbêdne nie s¹ zainstalowane 
-Audyt w³¹czenia Azure Backup do VM 
+Funkcyjne dla dziaÅ‚Ã³w ktÃ³re korzystajÄ… z konkretnych aplikacji/systemÃ³w. 
+przygotujesz krÃ³tki opis wybranych polityk, ktÃ³re sÄ… dla Ciebie najwaÅ¼niejsze. uzasdnij swÃ³j wybÃ³r
+Organizacyjne, jako zwiÄ™kszajÄ…ce poziom organizacji i czytelnoÅ›ci zasobÃ³w w firmie
+Konwencja nazewnicza â€“ wymuszenie stosowania konwencji nazewniczej dla zasobÃ³w w Azure
+OgraniczajÄ…ce koszty, jako polityki ktÃ³re trzymajÄ… koszty w ryzach, blokujÄ…c przypadkowe lub nieÅ›wiadome wybieranie drogich zasobÃ³w ktÃ³rych organizacja nie potrzebuje
+Ograniczenie uÅ¼ycia okreÅ›lonych zasobÃ³w â€“ wykluczenie zasobÃ³w lub rozmiarÃ³w pewnych zasobÃ³w (VM, storage) ktÃ³re organizacja nie bÄ™dzie korzystaÅ‚a np. ze wzglÄ™du na wysokie koszty
+Wykluczenie lokalizacji ktÃ³rych organizacja nie b
+ZapewniajÄ…ce podstawowe bezpieczeÅ„stwo Å›rodowiska. Zapewnienie bezpieczeÅ„stwa jest kluczowym kryterium w kaÅ¼dej firmie, 
+Audyt szyfrowanie dyskÃ³w â€“ bezpieczeÅ„stwo danych musi byÄ‡ zapewnione od samego poczÄ…tku stworzenia VM
+Wymuszenie instalacja rozszerzenie antymalware â€“ podobnie jak wyÅ¼ej, podstawowe zasady bezpieczeÅ„stwa
+Weryfikacja czy usÅ‚ugi ktÃ³re sÄ… zbÄ™dne nie sÄ… zainstalowane 
+Audyt wÅ‚Ä…czenia Azure Backup do VM 
 
-Weryfikacja zainstalowanych po¿¹danych us³ug 
+Weryfikacja zainstalowanych poÅ¼Ä…danych usÅ‚ug 
