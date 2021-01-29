@@ -1,7 +1,7 @@
 # zad 3
 
-## **Ponieważ już poznałeś nieco model ról, model polityk, model subskrypcji, napisz krótki dokument, najlepiej w punktach, w którym:
-opiszesz krótko jak działa IT w firmie - najważniejsze rzeczy**
+## Ponieważ już poznałeś nieco model ról, model polityk, model subskrypcji, napisz krótki dokument, najlepiej w punktach, w którym:
+opiszesz krótko jak działa IT w firmie - najważniejsze rzeczy
 
 Dział IT w większych organizacjach podzielony jest kilka- kilkanaście jednostek zajmujących się konkretnymi tematami takimi jak: 
 * System, IaaS Compute and Storage
