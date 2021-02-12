@@ -10,7 +10,7 @@
   
 
 * Topologia sieci
-  * Zarówno połączenia z on-prem jak i z zewnątrz są zbudowane w konfiguracji hub-and-spoke. VNet'y dmz-int-vnet oraz dmz-ext-vnet jako hub, natomiast aplikacyjne jako spoke.
+  * Zarówno połączenia z on-prem jak i z zewnątrz są zbudowane w konfiguracji hub-and-spoke. VNet'y dmz-int-vnet oraz dmz-ext-vnet jako hub, natomiast aplikacyjne jako spoke. Połączenie VNET peering pomiędzy Hub and spoke'ami.
 
 
 * Segmentacja
@@ -19,5 +19,8 @@
   * Na każdym subnet'cie podpięty jest NSG oraz routing table  
   * RT wskazuje na ruch do firewall, firewall jest odpowiedzialny za inspekcje i kontrole ruchu w ramach i do VNET
 
-
-+  
+* Monitoring i Security
+  * Użyłbym dostępnych narzędzi Network Watcher, Azure Monitor oraz Azure Sentinel jako SIEM zlokalizowane w dmz-ext-vnet oraz dmz-int-vnet do diagnozowania, analizy i monitoringu ruchu sieciowego 
+  
+* Strefa przesiadkowa
+  * W obu lokalizacjach dedykowany serwer wystawiony z publicznym IP i zabezpieczony NSG
