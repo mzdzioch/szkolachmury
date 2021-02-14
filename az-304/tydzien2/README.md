@@ -3,9 +3,14 @@
 * DR
   * Main Site w West Europe oraz Backup Site w North Europe. West Europe jest optymalnym punktem na mapie Azure na główny site ze względu niskie opóźnienia dla połączeń z oddziałów Polski i Holandii.
   
+  
+* Replikacja
+ * 
+  
 
 * Połączenia zewnętrzne
-  * Ruch z połączeń z internetu filtrowanych jest przez firewall'e skonfigurowane z load balance'erem aby zapewnić wysoką dostępność oraz rozłożyć obciążenie. VENT z firewall'ami może służyć rozbudowę pod DMZ. Połączenia z internetu dystrybuowane przez Traffic Manager skonfigurowany aby przerzucić ruch na site zapasowy w przypadku awarii site'u głównego
+  * Ruch z połączeń z internetu filtrowanych jest przez firewall'e skonfigurowane z load balance'erem aby zapewnić wysoką dostępność oraz rozłożyć obciążenie. VENT z firewall'ami może służyć rozbudowę pod DMZ. 
+  * Połączenia z internetu przechodzi przez Traffic Manager z routing'iem działającym w trybie Priority, ustawiony z priorytetem na site w West Europe i jako backup site na North Europe w przypadku awarii site'u głównego
   * HQ z Holandii, DC1/DC2 z Polski oraz oddziały lokalne połączone poprzez VPN IPsec do VPN Gateway'ów. Zastanowiłbym się nad użyciem Virtual WAN aby elastycznie podpinać kolejne oddziały z innych krajów oraz zarządzać połączeniami, natomiast nie wiem jak zachowuje się Virtual WAN w przypadku failover'u do site'u zapasowego.Z drugiej strony VPN Gateway też nie ma opcji przerzucenia ruchu do backup site w razie awarii site'u głównego :) Także nie jestem pewny zastowowanego rozwiązania 
   
 
@@ -25,3 +30,4 @@
   
 * Strefa przesiadkowa
   * W obu lokalizacjach dedykowany serwer wystawiony z publicznym IP i zabezpieczony NSG
+ 
