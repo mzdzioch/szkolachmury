@@ -5,7 +5,7 @@
   
   
 * Replikacja
- * 
+ * Replikacja przy użyciu Recovery Service vaults - replikowanie site'u primary do site'u backup
   
 
 * Połączenia zewnętrzne
