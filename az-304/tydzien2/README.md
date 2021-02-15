@@ -5,7 +5,8 @@
   
   
 * Replikacja
-  * Replikacja przy użyciu Recovery Service vaults - replikowanie site'u primary do site'u backup - oraz replikacji baz danych przy użyciu mechanizmów stosownych do bazy danych.
+  * Replikacja przy użyciu Recovery Service vaults - replikowanie site'u primary do site'u backup 
+  * Replikacji baz danych przy użyciu mechanizmów stosownych do bazy danych.
   
 
 * Połączenia zewnętrzne
