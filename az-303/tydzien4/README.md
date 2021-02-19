@@ -1,7 +1,7 @@
 ## #TYDZIEŃ5.1 
 „Dla każdego typu Storage, którego się nauczyłeś w czasie kursu (min. 4 typy) dobierz dwa dobre i jedno złe zastosowanie. Chciałbym byś zweryfikował różne możliwości składowania danych w Azure i opowiedział, kiedy i do czego te możliwości możesz wykorzystać.”
 
-#### Odpowiedź
+#### Odpowiedź:
 Azure Blob 
  * Dobre zastosowanie: przechowywanie zdjęć sprzedawanych produktów, streaming video reklamujących produkt, przechowywanie dokumentacji np. instrukcji, regulaminów itp. , przechowywanie backup
  * Złe zastosowanie: pliki współdzielone
@@ -22,6 +22,8 @@ Azure Table
 ## #TYDZIEŃ5.2
 „Wymień jeden dobry i jeden zły przykład wykorzystania StorSimple w swojej organizacji. Napisz, kiedy i w jakich scenariuszach się sprawdzi, a kiedy nie.”
 
+#### Odpowiedź:
+
 Dobre:
 Archiwum, Disk-based backup, SharePoint, serwer plików
 
@@ -29,7 +31,7 @@ Złe zastosowanie:
 Real time application, baza danych wysokiej wydajności
 
 
-#### Odpowiedź
+
 
 
 ## #TYDZIEŃ5.3
@@ -39,7 +41,7 @@ Real time application, baza danych wysokiej wydajności
  * Rozważ różne aspekty i różne możliwości usług i pokaż jako algorytm liczenia przyjąłeś.
 
 
-#### Odpowiedź
+#### Odpowiedź:
 
 Założenia:
 * Składujemy backup na Azure Storage
