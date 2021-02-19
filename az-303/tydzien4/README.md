@@ -1,54 +1,57 @@
-## #TYDZIEÑ5.1 
-„Dla ka¿dego typu Storage, którego siê nauczy³eœ w czasie kursu (min. 4 typy) dobierz dwa dobre i jedno z³e zastosowanie. Chcia³bym byœ zweryfikowa³ ró¿ne mo¿liwoœci sk³adowania danych w Azure i opowiedzia³, kiedy i do czego te mo¿liwoœci mo¿esz wykorzystaæ.”
+## #TYDZIEÅƒ5.1 
+â€Dla kaÅ¼dego typu Storage, ktÃ³rego siÄ™ nauczyÅ‚eÅ› w czasie kursu (min. 4 typy) dobierz dwa dobre i jedno zÅ‚e zastosowanie. ChciaÅ‚bym byÅ› zweryfikowaÅ‚ rÃ³Å¼ne moÅ¼liwoÅ›ci skÅ‚adowania danych w Azure i opowiedziaÅ‚, kiedy i do czego te moÅ¼liwoÅ›ci moÅ¼esz wykorzystaÄ‡.â€
 
-#### OdpowiedŸ
+#### OdpowiedÅº
 Azure Blob 
- * Dobre zastosowanie: przechowywanie zdjêæ sprzedawanych produktów, streaming video reklamuj¹cych produkt, przechowywanie dokumentacji np. instrukcji, regulaminów itp. , przechowywanie backup
- * Z³e zastosowanie: pliki wspó³dzielone
+ * Dobre zastosowanie: przechowywanie zdjÄ™Ä‡ sprzedawanych produktÃ³w, streaming video reklamujÄ…cych produkt, przechowywanie dokumentacji np. instrukcji, regulaminÃ³w itp. , przechowywanie backup
+ * ZÅ‚e zastosowanie: pliki wspÃ³Å‚dzielone
+
 Azure File
- * Dobre zastosowanie: pliki do wspó³dzielenia z innymi u¿ytkownikami, 
- * Z³e zastosowanie: przechowywanie plików video
+ * Dobre zastosowanie: pliki do wspÃ³Å‚dzielenia z innymi uÅ¼ytkownikami, 
+ * ZÅ‚e zastosowanie: przechowywanie plikÃ³w video
+
 Azure Queue 
- * Dobre zastosowanie: aplikacja budowana w stylu „decoupled”, wymiana danych z systemami partnerów, integracja z innymi systemami wewnêtrznymi
- * Z³e zastosowanie: Musimy mieæ zagwarantowany porz¹dek wiadomoœci „FIFO”
+ * Dobre zastosowanie: aplikacja budowana w stylu â€decoupledâ€, wymiana danych z systemami partnerÃ³w, integracja z innymi systemami wewnÄ™trznymi
+ * ZÅ‚e zastosowanie: Musimy mieÄ‡ zagwarantowany porzÄ…dek wiadomoÅ›ci â€FIFOâ€
+
 Azure Table
- * Dobre zastosowanie: zapisywanie danych w prostych tabelach które nie potrzebuj¹ klucza obcego, wykonywania z³o¿onych zapytañ, np. przechowywanie logów czy danych diagnostycznych
- * Z³e zastosowanie: potrzebujemy relacji pomiêdzy tabelami w bazie danych, wykonywania zaawansowanych zapytañ
+ * Dobre zastosowanie: zapisywanie danych w prostych tabelach ktÃ³re nie potrzebujÄ… klucza obcego, wykonywania zÅ‚oÅ¼onych zapytaÅ„, np. przechowywanie logÃ³w czy danych diagnostycznych
+ * ZÅ‚e zastosowanie: potrzebujemy relacji pomiÄ™dzy tabelami w bazie danych, wykonywania zaawansowanych zapytaÅ„
 
 
-## #TYDZIEÑ5.2
-„Wymieñ jeden dobry i jeden z³y przyk³ad wykorzystania StorSimple w swojej organizacji. Napisz, kiedy i w jakich scenariuszach siê sprawdzi, a kiedy nie.”
+## #TYDZIEÅƒ5.2
+â€WymieÅ„ jeden dobry i jeden zÅ‚y przykÅ‚ad wykorzystania StorSimple w swojej organizacji. Napisz, kiedy i w jakich scenariuszach siÄ™ sprawdzi, a kiedy nie.â€
 
 Dobre:
-Archiwum, Disk-based backup, SharePoint, serwer plików
+Archiwum, Disk-based backup, SharePoint, serwer plikÃ³w
 
-Z³e zastosowanie: 
-Real time application, baza danych wysokiej wydajnoœci
-
-
-#### OdpowiedŸ
+ZÅ‚e zastosowanie: 
+Real time application, baza danych wysokiej wydajnoÅ›ci
 
 
-## #TYDZIEÑ5.3
-„Liczymy Koszty :). Umówmy siê. Twój system backupu (nie ma znaczenia jaki) sk³aduje 1TB nowych danych ka¿dego dnia. Wykorzystujesz oczywiœcie Azure do tej operacji i chcesz dane sk³adowaæ jak najtaniej. Przez dwa lata nie kasujesz zebranych danych. Po dwóch latach na próbê odtwarzasz dane z ostatniego dnia ka¿dego roku. Po 3 roku kasujesz dane, zebrane w roku pierwszym.
-
- * Ile ³¹cznie wygenerujesz kosztów w ramach tej us³ugi, jeœli rozwa¿ymy pe³ny, 6 letni okres jej dzia³ania.
- * Rozwa¿ ró¿ne aspekty i ró¿ne mo¿liwoœci us³ug i poka¿ jako algorytm liczenia przyj¹³eœ.
+#### OdpowiedÅº
 
 
-#### OdpowiedŸ
+## #TYDZIEÅƒ5.3
+â€Liczymy Koszty :). UmÃ³wmy siÄ™. TwÃ³j system backupu (nie ma znaczenia jaki) skÅ‚aduje 1TB nowych danych kaÅ¼dego dnia. Wykorzystujesz oczywiÅ›cie Azure do tej operacji i chcesz dane skÅ‚adowaÄ‡ jak najtaniej. Przez dwa lata nie kasujesz zebranych danych. Po dwÃ³ch latach na prÃ³bÄ™ odtwarzasz dane z ostatniego dnia kaÅ¼dego roku. Po 3 roku kasujesz dane, zebrane w roku pierwszym.
 
-Za³o¿enia:
-* Sk³adujemy backup na Azure Storage
+ * Ile Å‚Ä…cznie wygenerujesz kosztÃ³w w ramach tej usÅ‚ugi, jeÅ›li rozwaÅ¼ymy peÅ‚ny, 6 letni okres jej dziaÅ‚ania.
+ * RozwaÅ¼ rÃ³Å¼ne aspekty i rÃ³Å¼ne moÅ¼liwoÅ›ci usÅ‚ug i pokaÅ¼ jako algorytm liczenia przyjÄ…Å‚eÅ›.
+
+
+#### OdpowiedÅº
+
+ZaÅ‚oÅ¼enia:
+* SkÅ‚adujemy backup na Azure Storage
 * Backup: 
   * Dziennie: 1TB 
-  * Miesiêcznie: 30 TB
+  * MiesiÄ™cznie: 30 TB
   * Rocznie: 365 TB
 * Czas trwania: 6 lat
 * Retencja 3 lata, po 3 latach usuwamy to co starsze
-* 1 miesi¹c = 30 dni, 1 Rok = 365 dni
+* 1 miesiÄ…c = 30 dni, 1 Rok = 365 dni
 
-Iloœæ wygenerowanych danych:
+IloÅ›Ä‡ wygenerowanych danych:
 Rok 1: 365 TB
 Rok 2: 730 TB
 Rok 3: 1095 TB 
@@ -57,15 +60,15 @@ Rok 5: 1095 TB (po roku 4 usuwamy dane z roku 2)
 Rok 6: 1095 TB (po roku 5 usuwamy dane z roku 3)
 
 Wygenerowane koszty:
-Za³o¿enia:
- * Cena za 1TB = 55,3 USD miesiêcznie zaczerpniêta z kalkulatora Azure przy poni¿szych parametrach:
+ZaÅ‚oÅ¼enia:
+ * Cena za 1TB = 55,3 USD miesiÄ™cznie zaczerpniÄ™ta z kalkulatora Azure przy poniÅ¼szych parametrach:
   * Region: West Europe
   * Typ: Magazyn blob storage
-  * Warstwa wydajnoœci: Standard
-  * Type konta magazynu: Ogólnego przeznaczenia, V2
-  * Nadmiarowoœæ: LRS
-  * Warstwa dostêpu: Archiwum
-  * Wszelkie operacje zapisu/odczytu nie s¹ brane pod uwagê przy wyliczeniu kosztu sk³adowania 1TB
+  * Warstwa wydajnoÅ›ci: Standard
+  * Type konta magazynu: OgÃ³lnego przeznaczenia, V2
+  * NadmiarowoÅ›Ä‡: LRS
+  * Warstwa dostÄ™pu: Archiwum
+  * Wszelkie operacje zapisu/odczytu nie sÄ… brane pod uwagÄ™ przy wyliczeniu kosztu skÅ‚adowania 1TB
 
 Rok 1: 2340 TB x 55,3 USD = 129'402 USD
 Rok 2: (12 x 360 TB + 2340 TB) x 55,3 USD = 368'298 USD 
@@ -74,18 +77,18 @@ Rok 4: (12 x 2 x 360 TB + 2340 TB) x 55,3 USD = 607'194 USD
 Rok 5: (12 x 2 x 360 TB + 2340 TB) x 55,3 USD = 607'194 USD
 Rok 6: (12 x 2 x 360 TB + 2340 TB) x 55,3 USD = 607'194 USD
 
-Wyjaœnienie: 
-W roku 1, p³acimy za przechowywane dane w nastêuj¹cy sposób:
-Miesi¹c 1: 30 TB x 55,3 USD
-Miesi¹c 2: 60 TB x 55,3 USD
-Miesi¹c 2: 90 TB x 55,3 USD
+WyjaÅ›nienie: 
+W roku 1, pÅ‚acimy za przechowywane dane w nastÄ™ujÄ…cy sposÃ³b:
+MiesiÄ…c 1: 30 TB x 55,3 USD
+MiesiÄ…c 2: 60 TB x 55,3 USD
+MiesiÄ…c 2: 90 TB x 55,3 USD
 (...)
-Miesi¹c 12: 360 TB x 55,3 USD
+MiesiÄ…c 12: 360 TB x 55,3 USD
 
-Z sumy ci¹gów wyliczamy iloœæ jednostek TB za które p³acimy w ci¹gu roku 12 x (30 + 360)/2 = 2340TB
+Z sumy ciÄ…gÃ³w wyliczamy iloÅ›Ä‡ jednostek TB za ktÃ³re pÅ‚acimy w ciÄ…gu roku 12 x (30 + 360)/2 = 2340TB
 
-W roku 2, p³acimy za ka¿dy miesi¹c przechowywania danych zebranych w 1 roku i  inkrementalnie przyrastaj¹cymi danym w ci¹gu roku 2 czyli 2340 TB
+W roku 2, pÅ‚acimy za kaÅ¼dy miesiÄ…c przechowywania danych zebranych w 1 roku i  inkrementalnie przyrastajÄ…cymi danym w ciÄ…gu roku 2 czyli 2340 TB
 
-W roku 3, podobnie jak w roku 2 tylko p³acimy za dane zebrane z dwóch ostatnich lat czyli za 2x360TB plus dane inkrementalne w ci¹gu roku 3 czyli 2340 TB. 
+W roku 3, podobnie jak w roku 2 tylko pÅ‚acimy za dane zebrane z dwÃ³ch ostatnich lat czyli za 2x360TB plus dane inkrementalne w ciÄ…gu roku 3 czyli 2340 TB. 
 
-Op³acalnie by³oby rozwa¿yæ u¿ycie storage zarezerwanego z góry na 6 lat (2 razy po 3 lata) z iloœci¹ 11PB. Wygl¹da ¿e wysz³oby taniej. 
+OpÅ‚acalnie byÅ‚oby rozwaÅ¼yÄ‡ uÅ¼ycie storage zarezerwanego z gÃ³ry na 6 lat (2 razy po 3 lata) z iloÅ›ciÄ… 11PB. WyglÄ…da Å¼e wyszÅ‚oby taniej. 
