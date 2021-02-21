@@ -63,7 +63,7 @@ Rok 6: 1095 TB (po roku 5 usuwamy dane z roku 3)
 
 Wygenerowane koszty:
 Założenia:
- * Cena za 1TB = 55,3 USD miesięcznie zaczerpnięta z kalkulatora Azure przy poniższych parametrach:
+ * Cena za 1TB = 1,84 USD miesięcznie zaczerpnięta z kalkulatora Azure przy poniższych parametrach:
   * Region: West Europe
   * Typ: Magazyn blob storage
   * Warstwa wydajności: Standard
@@ -72,25 +72,25 @@ Założenia:
   * Warstwa dostępu: Archiwum
   * Wszelkie operacje zapisu/odczytu nie są brane pod uwagę przy wyliczeniu kosztu składowania 1TB
 
-Rok 1: 2340 TB x 55,3 USD = 129'402 USD
-Rok 2: (12 x 360 TB + 2340 TB) x 55,3 USD = 368'298 USD 
-Rok 3: (12 x 2 x 360 TB + 2340 TB) x 55,3 USD = 607'194 USD
-Rok 4: (12 x 2 x 360 TB + 2340 TB) x 55,3 USD = 607'194 USD
-Rok 5: (12 x 2 x 360 TB + 2340 TB) x 55,3 USD = 607'194 USD
-Rok 6: (12 x 2 x 360 TB + 2340 TB) x 55,3 USD = 607'194 USD
+Rok 1: 2340 TB x 1,84 USD = 4'305,60 USD
+Rok 2: (12 x 360 TB + 2340 TB) x 1,84 USD =  12'254,40 USD 
+Rok 3: (12 x 2 x 360 TB + 2340 TB) x 1,84 USD = 20'203,20 USD
+Rok 4: (12 x 2 x 360 TB + 2340 TB) x 1,84 USD = 20'203,20 USD
+Rok 5: (12 x 2 x 360 TB + 2340 TB) x 1,84 USD = 20'203,20 USD
+Rok 6: (12 x 2 x 360 TB + 2340 TB) x 1,84 USD = 20'203,20 USD
 
 Wyjaśnienie: 
 W roku 1, płacimy za przechowywane dane w nastęujący sposób:
-Miesiąc 1: 30 TB x 55,3 USD
-Miesiąc 2: 60 TB x 55,3 USD
-Miesiąc 2: 90 TB x 55,3 USD
+Miesiąc 1: 30 TB x 1,84 USD
+Miesiąc 2: 60 TB x 1,84 USD
+Miesiąc 2: 90 TB x 1,84 USD
 (...)
-Miesiąc 12: 360 TB x 55,3 USD
+Miesiąc 12: 360 TB x 1,84 USD
 
 Z sumy ciągów wyliczamy ilość jednostek TB za które płacimy w ciągu roku 12 x (30 + 360)/2 = 2340TB
 
-W roku 2, płacimy za każdy miesiąc przechowywania danych zebranych w 1 roku i  inkrementalnie przyrastającymi danym w ciągu roku 2 czyli 2340 TB
+W roku 2, płacimy za każdy miesiąc przechowywania danych zebranych w 1 roku i inkrementalnie przyrastającymi danymi w ciągu roku 2 czyli 2340 TB
 
 W roku 3, podobnie jak w roku 2 tylko płacimy za dane zebrane z dwóch ostatnich lat czyli za 2x360TB plus dane inkrementalne w ciągu roku 3 czyli 2340 TB. 
 
-Opłacalnie byłoby rozważyć użycie storage zarezerwanego z góry na 6 lat (2 razy po 3 lata) z ilością 11PB. Wygląda że wyszłoby taniej. 
+
