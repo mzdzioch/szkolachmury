@@ -53,12 +53,12 @@ Założenia:
 * Retencja 3 lata, po 3 latach usuwamy to co starsze
 * 1 miesiąc = 30 dni, 1 Rok = 365 dni
 
-Ilość wygenerowanych danych:
-Rok 1: 365 TB
-Rok 2: 730 TB
-Rok 3: 1095 TB 
-Rok 4: 1095 TB (po roku 3 usuwamy dane z roku 1)
-Rok 5: 1095 TB (po roku 4 usuwamy dane z roku 2)
+Ilość wygenerowanych danych:\
+Rok 1: 365 TB\
+Rok 2: 730 TB\
+Rok 3: 1095 TB\ 
+Rok 4: 1095 TB (po roku 3 usuwamy dane z roku 1)\
+Rok 5: 1095 TB (po roku 4 usuwamy dane z roku 2)\
 Rok 6: 1095 TB (po roku 5 usuwamy dane z roku 3)
 
 Wygenerowane koszty:
