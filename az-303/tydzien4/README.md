@@ -62,8 +62,9 @@ Rok 5: 1095 TB (po roku 4 usuwamy dane z roku 2)
 Rok 6: 1095 TB (po roku 5 usuwamy dane z roku 3)
 
 Wygenerowane koszty:
+
 Założenia:
- * Cena za 1TB = 1,84 USD miesięcznie zaczerpnięta z kalkulatora Azure przy poniższych parametrach:
+* Cena za 1TB = 1,84 USD miesięcznie zaczerpnięta z kalkulatora Azure przy poniższych parametrach:
   * Region: West Europe
   * Typ: Magazyn blob storage
   * Warstwa wydajności: Standard
