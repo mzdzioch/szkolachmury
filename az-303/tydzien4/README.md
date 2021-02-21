@@ -74,17 +74,12 @@ Założenia:
   * Wszelkie operacje zapisu/odczytu nie są brane pod uwagę przy wyliczeniu kosztu składowania 1TB
 
 
-Rok 1: 2340 TB x 1,84 USD = 4'305,60 USD
-
-Rok 2: (12 x 360 TB + 2340 TB) x 1,84 USD =  12'254,40 USD
-
-Rok 3: (12 x 2 x 360 TB + 2340 TB) x 1,84 USD = 20'203,20 USD
-
-Rok 4: (12 x 2 x 360 TB + 2340 TB) x 1,84 USD = 20'203,20 USD
-
-Rok 5: (12 x 2 x 360 TB + 2340 TB) x 1,84 USD = 20'203,20 USD
-
-Rok 6: (12 x 2 x 360 TB + 2340 TB) x 1,84 USD = 20'203,20 USD
+Rok 1: 2340 TB x 1,84 USD = 4'305,60 USD\
+Rok 2: (12 x 360 TB + 2340 TB) x 1,84 USD =  12'254,40 USD\
+Rok 3: (12 x 2 x 360 TB + 2340 TB) x 1,84 USD = 20'203,20 USD\
+Rok 4: (12 x 2 x 360 TB + 2340 TB) x 1,84 USD = 20'203,20 USD\
+Rok 5: (12 x 2 x 360 TB + 2340 TB) x 1,84 USD = 20'203,20 USD\
+Rok 6: (12 x 2 x 360 TB + 2340 TB) x 1,84 USD = 20'203,20 USD\
 
 Wyjaśnienie: 
 
