@@ -10,3 +10,8 @@ Możliwość podpięcia dowolnego serwisu, wystawionego w kontenerze pod przycho
 W warstwie prezentacji danych znajdzie się baza relacyjna oraz aplikacja webowa osadzona w usłudze PaaS.
 Dostęp dla firm zewnętrznych będzie zrealizowany za pomocą API, które będzie w bezpieczny sposób udostępnione na zewnątrz
 W ramach prac zaprojektuj rozwiązanie oraz stwórz proste PoC (proof of concept) pokazujące możliwości działania tego systemu.
+
+
+az-304/tydzien3/Szkola chmury AZ-304 Event Driven.png
+https://github.com/mzdzioch/szkolachmury/blob/4697ea16af9e9517accafd4d9c269495bb79b5f6/az-304/tydzien3/Szkola%20chmury%20AZ-304%20Event%20Driven.png
+![alt text](https://github.com/mzdzioch/szkolachmury/blob/main/az-304/tydzien3/Szkola%20chmury%20AZ-304%20Event%20Driven.png)
